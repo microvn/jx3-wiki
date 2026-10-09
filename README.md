@@ -23,6 +23,8 @@ Muốn viết hoặc sửa bài? Đọc [CONTRIBUTING.md](CONTRIBUTING.md). Khô
 **[Hỏi đáp](hoi-dap/_index.md)**
 - [Báo lỗi ở đâu](hoi-dap/bao-loi-o-dau.md)
 
+**Tin tức** (`tin-tuc/`): bài chi tiết cho từng bản cập nhật, hiện ở trang Tin tức của web.
+
 ## Cấu trúc repo
 
 ```
@@ -32,6 +34,7 @@ pho-ban/       Phó bản
 nhiem-vu/      Nhiệm vụ
 khinh-cong/    Khinh công
 hoi-dap/       Hỏi đáp
+tin-tuc/       Tin tức cập nhật (chỉ quản trị duyệt, không có _index.md)
   _index.md    tên và thứ tự của chuyên mục
   ten-bai.md   một bài viết
   assets/      ảnh của các bài trong chuyên mục

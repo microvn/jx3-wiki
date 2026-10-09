@@ -16,7 +16,13 @@ const MAX_IMAGE_BYTES = 500 * 1024;
 const IMAGE_EXT = new Set(['.png', '.jpg', '.jpeg', '.webp', '.gif', '.avif']);
 const ROOT_FILES = new Set(['README.md', 'CONTRIBUTING.md', '_template.md', 'LICENSE', '.gitignore', '.gitattributes', '.editorconfig']);
 const SKIP_DIRS = new Set(['.git', '.github', 'scripts', 'node_modules']);
-const FM_KEYS = new Set(['title', 'order', 'updated', 'authors', 'tags']);
+const FM_KEYS = new Set(['title', 'order', 'updated', 'authors', 'tags', 'draft']);
+// Chuyên mục tin tức: không có _index.md, frontmatter riêng (xem CONTRIBUTING.md).
+const NEWS_DIR = 'tin-tuc';
+const NEWS_KEYS = new Set(['title', 'date', 'kind', 'version']);
+const NEWS_KINDS = new Set(['up', 'ev', 'mt']);
+const VERSION_RE = /^\d+\.\d+\.\d+$/;
+const newsVersions = new Map();
 const NAME_RE = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 const IN_ACTIONS = process.env.GITHUB_ACTIONS === 'true';
 
@@ -87,6 +93,36 @@ function validDate(s) {
   return dt.getUTCFullYear() === y && dt.getUTCMonth() === mo - 1 && dt.getUTCDate() === d;
 }
 
+function checkNewsFrontmatter(file, fm) {
+  if (!fm) {
+    err(file, 1, 'Thiếu frontmatter. Tin phải mở đầu bằng "---", các dòng title, date, kind, rồi "---".');
+    return;
+  }
+  const { data, at } = fm;
+  if (typeof data.title !== 'string' || data.title.trim() === '') {
+    err(file, at.title || 1, 'Thiếu "title" trong frontmatter (bắt buộc).');
+  }
+  if (!validDate(String(data.date ?? ''))) {
+    err(file, at.date || 1, `"date" là ngày đăng, bắt buộc, dạng dd/mm/yyyy, ví dụ 09/10/2026. Đang là "${data.date ?? ''}".`);
+  }
+  if (!NEWS_KINDS.has(String(data.kind ?? ''))) {
+    err(file, at.kind || 1, `"kind" bắt buộc, là up (cập nhật), ev (sự kiện) hoặc mt (bảo trì). Đang là "${data.kind ?? ''}".`);
+  }
+  if (data.version !== undefined && data.version !== '') {
+    const v = String(data.version);
+    if (!VERSION_RE.test(v)) {
+      err(file, at.version, `"version" phải có dạng 0.1.22. Đang là "${v}".`);
+    } else if (newsVersions.has(v)) {
+      err(file, at.version, `Bản ${v} đã có tin ${newsVersions.get(v)}. Mỗi bản chỉ một tin.`);
+    } else {
+      newsVersions.set(v, rel(file));
+    }
+  }
+  for (const k of Object.keys(data)) {
+    if (!NEWS_KEYS.has(k)) warn(file, at[k], `Trường "${k}" không dùng cho tin tức (chỉ có title, date, kind, version). Gõ nhầm?`);
+  }
+}
+
 function checkFrontmatter(file, fm) {
   if (!fm) {
     err(file, 1, 'Thiếu frontmatter. Bài phải mở đầu bằng "---", dòng "title: Tên bài", rồi "---". Xem _template.md.');
@@ -102,13 +138,16 @@ function checkFrontmatter(file, fm) {
   if (data.updated !== undefined && data.updated !== '' && !validDate(String(data.updated))) {
     err(file, at.updated, `"updated" phải là ngày dạng dd/mm/yyyy, ví dụ 09/10/2026. Đang là "${data.updated}".`);
   }
+  if (data.draft !== undefined && data.draft !== '' && data.draft !== 'true' && data.draft !== 'false') {
+    err(file, at.draft, `"draft" chỉ nhận true hoặc false. Đang là "${data.draft}".`);
+  }
   for (const k of ['authors', 'tags']) {
     if (data[k] !== undefined && data[k] !== '' && !Array.isArray(data[k])) {
       err(file, at[k], `"${k}" phải là danh sách, ví dụ ${k}: [a, b]. Đang là "${data[k]}".`);
     }
   }
   for (const k of Object.keys(data)) {
-    if (!FM_KEYS.has(k)) warn(file, at[k], `Trường "${k}" không được dùng (chỉ có title, order, updated, authors, tags). Gõ nhầm?`);
+    if (!FM_KEYS.has(k)) warn(file, at[k], `Trường "${k}" không được dùng (chỉ có title, order, updated, authors, tags, draft). Gõ nhầm?`);
   }
 }
 
@@ -249,7 +288,8 @@ function checkMarkdown(file) {
   let bodyStart = 0;
   if (needsFm) {
     const fm = parseFrontmatter(file, text);
-    checkFrontmatter(file, fm);
+    if (r.startsWith(NEWS_DIR + '/') && name !== '_index.md') checkNewsFrontmatter(file, fm);
+    else checkFrontmatter(file, fm);
     if (fm) bodyStart = fm.bodyStart;
   }
   const masked = maskCode(lines, bodyStart);
@@ -262,6 +302,9 @@ function checkMarkdown(file) {
     const ref = line.match(REFDEF_RE);
     if (ref) checkTarget(file, n, false, ref[2]);
   });
+  if (name === '_index.md' && r.startsWith(NEWS_DIR + '/')) {
+    err(file, 1, `Thư mục ${NEWS_DIR}/ không dùng _index.md. Mỗi file là một tin.`);
+  }
   if (name === '_index.md' && rel(file).split('/').length !== 2) {
     err(file, 1, '_index.md chỉ đặt ở thư mục chuyên mục cấp một.');
   }
@@ -319,6 +362,7 @@ for (const f of files) {
 }
 
 for (const cat of categories) {
+  if (cat === NEWS_DIR) continue;
   if (!fs.existsSync(path.join(ROOT, cat, '_index.md'))) {
     err(path.join(ROOT, cat), 1, `Chuyên mục "${cat}/" thiếu file _index.md (tên và thứ tự chuyên mục).`);
   }

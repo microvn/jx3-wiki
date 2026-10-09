@@ -44,6 +44,27 @@ tags: [phó bản, Minh Giáo]
 - `updated`: ngày sửa gần nhất, dạng ngày/tháng/năm.
 - `authors`: tên Discord của người viết, nhiều người thì cách nhau bằng dấu phẩy. Bạn sửa bài của người khác thì thêm tên mình vào cuối.
 - `tags`: vài từ khoá để tìm bài.
+- `draft`: ghi `draft: true` nếu bài còn viết dở. Trang web gắn nhãn "nháp" cho bài.
+
+## Tin tức (`tin-tuc/`)
+
+Thư mục `tin-tuc/` chứa bài chi tiết cho từng bản cập nhật, sự kiện hay đợt bảo trì. Tin là thông báo chính thức nên mọi thay đổi trong thư mục này phải được quản trị duyệt. Phần đầu bài khác bài wiki:
+
+```
+---
+title: Khinh công bay tiếp được giữa không trung
+date: 08/10/2026
+kind: up
+version: 0.1.22
+---
+```
+
+- `title`: tiêu đề tin. **Bắt buộc.**
+- `date`: ngày đăng, dạng ngày/tháng/năm. **Bắt buộc.**
+- `kind`: `up` (cập nhật), `ev` (sự kiện) hoặc `mt` (bảo trì). **Bắt buộc.**
+- `version`: số bản client, ví dụ `0.1.22`. Tin trên launcher có tiêu đề bắt đầu bằng "Bản 0.1.22" sẽ trỏ tới tin có `version: 0.1.22`. Mỗi bản chỉ một tin.
+
+Tên file theo số bản, ví dụ `ban-0-1-22.md`. Đoạn văn đầu tiên là đoạn dẫn, hiện ngay dưới tiêu đề.
 
 ## Quy ước viết
 
