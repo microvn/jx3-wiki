@@ -12,7 +12,7 @@ Vào Máy chủ V80 chỉ cần ba bước: tải gói cài, đặt launcher c�
 
 Tải gói đầy đủ **JXOnline3VN-v2.5.2** và giải nén ra một thư mục, ví dụ `D:\Games\JXOnline3VN-v2.5.2`. Gói này chỉ cần tải một lần, các bản vá sau do launcher tự tải.
 
-Link tải gói cài: [cần bổ sung]
+Link tải gói cài (Google Drive): [JXOnline3VN-v2.5.2](https://drive.google.com/file/d/1Gh8_ujPGkh1izbkQ5VgJMyVXlE4a_LkN/view?usp=sharing)
 
 Sau khi giải nén, trong thư mục game phải có file `jx3client.exe`. Nếu không thấy, có thể bạn đã giải nén lồng thêm một thư mục con. Mở thư mục con đó ra cho tới khi thấy `jx3client.exe`.
 
