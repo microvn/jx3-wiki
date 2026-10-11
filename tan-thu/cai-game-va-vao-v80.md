@@ -34,7 +34,7 @@ Launcher tự cập nhật game về bản mới nhất mỗi lần mở. Từ g
 3. Bấm **Vào game**.
 4. Đăng nhập bằng tài khoản đã đăng ký, chọn **Máy chủ V80**.
 
-Trang đăng ký tài khoản: [cần bổ sung]
+Đăng ký tài khoản tại [jx3-web.vercel.app/register](https://jx3-web.vercel.app/register).
 
 ## Gặp lỗi khi cài
 
