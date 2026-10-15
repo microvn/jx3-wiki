@@ -16,7 +16,7 @@ const MAX_IMAGE_BYTES = 500 * 1024;
 const IMAGE_EXT = new Set(['.png', '.jpg', '.jpeg', '.webp', '.gif', '.avif']);
 const ROOT_FILES = new Set(['README.md', 'CONTRIBUTING.md', '_template.md', 'LICENSE', '.gitignore', '.gitattributes', '.editorconfig']);
 const SKIP_DIRS = new Set(['.git', '.github', 'scripts', 'node_modules']);
-const FM_KEYS = new Set(['title', 'order', 'updated', 'authors', 'tags', 'draft']);
+const FM_KEYS = new Set(['title', 'order', 'group', 'updated', 'authors', 'tags', 'draft']);
 // Chuyên mục tin tức: không có _index.md, frontmatter riêng (xem CONTRIBUTING.md).
 const NEWS_DIR = 'tin-tuc';
 const NEWS_KEYS = new Set(['title', 'date', 'kind', 'version', 'cover']);
@@ -147,7 +147,7 @@ function checkFrontmatter(file, fm) {
     }
   }
   for (const k of Object.keys(data)) {
-    if (!FM_KEYS.has(k)) warn(file, at[k], `Trường "${k}" không được dùng (chỉ có title, order, updated, authors, tags, draft). Gõ nhầm?`);
+    if (!FM_KEYS.has(k)) warn(file, at[k], `Trường "${k}" không được dùng (chỉ có title, order, group, updated, authors, tags, draft). Gõ nhầm?`);
   }
 }
 

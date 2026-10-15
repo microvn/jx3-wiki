@@ -18,7 +18,7 @@ Cách xử lý tài khoản sẽ thông báo trên trang Tin tức và Discord t
 
 ## Đã chơi thử nghiệm thì có quà gì?
 
-Danh hiệu tri ân Lão Giang Hồ, có hiệu ứng ánh sáng quanh nhân vật, giữ 7 ngày kể từ lúc nhận. Cách nhận sẽ thông báo trên Discord.
+Danh hiệu tri ân Cố Nhân, có hiệu ứng ánh sáng quanh nhân vật, giữ 7 ngày kể từ lúc nhận. Cách nhận sẽ thông báo trên Discord.
 
 ## Quà theo cấp có giao dịch được không?
 

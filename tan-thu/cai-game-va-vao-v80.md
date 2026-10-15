@@ -1,6 +1,7 @@
 ---
 title: Cài game và vào Máy chủ V80
 order: 1
+group: Cài đặt
 updated: 15/10/2026
 authors: [Microvn]
 tags: [tân thủ, cài đặt, launcher]

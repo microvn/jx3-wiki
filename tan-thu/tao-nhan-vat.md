@@ -1,6 +1,7 @@
 ---
 title: Đăng nhập và tạo nhân vật
 order: 3
+group: Cài đặt
 updated: 15/10/2026
 authors: [Microvn]
 tags: [tân thủ, tạo nhân vật, đăng nhập, môn phái, bản đồ, nhiệm vụ]

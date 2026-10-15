@@ -1,6 +1,7 @@
 ---
 title: Launcher 64-bit hay 32-bit
 order: 2
+group: Cài đặt
 updated: 09/10/2026
 authors: [Microvn]
 tags: [tân thủ, launcher, windows 7]

@@ -41,6 +41,7 @@ tags: [phó bản, Minh Giáo]
 
 - `title`: tên bài. **Bắt buộc.**
 - `order`: số thứ tự trong chuyên mục, số nhỏ đứng trước. Không ghi thì bài xếp cuối.
+- `group`: nhóm con trong chuyên mục, ví dụ `group: Lộ trình theo cấp`. Các bài cùng nhóm được gom lại trên menu. Không bắt buộc. Gõ đúng y tên nhóm đã có để bài vào chung nhóm.
 - `updated`: ngày sửa gần nhất, dạng ngày/tháng/năm.
 - `authors`: tên Discord của người viết, nhiều người thì cách nhau bằng dấu phẩy. Bạn sửa bài của người khác thì thêm tên mình vào cuối.
 - `tags`: vài từ khoá để tìm bài.
@@ -81,7 +82,8 @@ Tên file theo số bản, ví dụ `ban-0-1-22.md`. Đoạn văn đầu tiên l
 - Mỗi ảnh **không quá 500 KB**. Ảnh chụp màn hình nên lưu dạng `.webp` hoặc `.jpg` để nhẹ.
 - Tên file ảnh cũng chỉ dùng chữ thường không dấu, số và dấu gạch ngang, ví dụ `ban-do-truong-an.webp`.
 - Chèn ảnh bằng đường dẫn tương đối: `![Bản đồ Trường An](./assets/ban-do-truong-an.webp)`.
-- Chỉ dùng ảnh bạn tự chụp hoặc tự vẽ. Không lấy ảnh quảng bá, hình vẽ của VNG hay Kingsoft.
+- Bài mới chỉ dùng ảnh bạn tự chụp hoặc tự vẽ, không lấy ảnh quảng bá hay hình vẽ từ nơi khác.
+- Ngoại lệ là các bài lưu trữ (thẻ `lưu trữ`): bài và ảnh lấy từ trang Võ Lâm 3 cũ của VNG, cuối bài ghi `Nguồn: VNG (bài viết và hình ảnh)`. Sửa bài lưu trữ thì giữ nguyên dòng nguồn này.
 
 ## Video
 

@@ -11,7 +11,7 @@ Máy chủ V80 mở Open Beta lúc **7:00 sáng thứ Bảy, ngày 17/10/2026**.
 
 Toàn bộ nhân vật, vật phẩm và tiền của đợt thử nghiệm sẽ được xoá trước ngày mở. Mọi người tạo nhân vật mới và bắt đầu cùng một vạch xuất phát.
 
-Người đã cùng thử nghiệm sẽ nhận danh hiệu tri ân Lão Giang Hồ, giữ 7 ngày kể từ lúc nhận. Cách nhận sẽ thông báo trên Discord.
+Người đã cùng thử nghiệm sẽ nhận danh hiệu tri ân Cố Nhân, giữ 7 ngày kể từ lúc nhận. Cách nhận sẽ thông báo trên Discord.
 
 ## Quà theo cấp
 
