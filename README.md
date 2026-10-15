@@ -22,6 +22,7 @@ Muốn viết hoặc sửa bài? Đọc [CONTRIBUTING.md](CONTRIBUTING.md). Khô
 
 **[Hỏi đáp](hoi-dap/_index.md)**
 - [Báo lỗi ở đâu](hoi-dap/bao-loi-o-dau.md)
+- [Hỏi đáp Open Beta](hoi-dap/open-beta.md)
 
 **Tin tức** (`tin-tuc/`): bài chi tiết cho từng bản cập nhật, hiện ở trang Tin tức của web.
 

@@ -1,12 +1,12 @@
 ---
 title: Cài game và vào Máy chủ V80
 order: 1
-updated: 09/10/2026
+updated: 15/10/2026
 authors: [Microvn]
 tags: [tân thủ, cài đặt, launcher]
 ---
 
-Vào Máy chủ V80 chỉ cần ba bước: tải gói cài, đặt launcher cạnh file game, rồi đăng nhập. Game là Võ Lâm 3 bản client 2.5.2, chạy trên Windows 7 trở lên.
+Vào Máy chủ V80 chỉ cần ba bước: tải gói cài, mở launcher có sẵn trong gói, rồi đăng nhập. Game là Võ Lâm 3 bản client 2.5.2, chạy trên Windows 7 trở lên.
 
 ## Bước 1: Tải gói cài
 
@@ -16,14 +16,14 @@ Link tải gói cài (Google Drive): [JXOnline3VN-v2.5.2](https://drive.google.c
 
 Sau khi giải nén, trong thư mục game phải có file `jx3client.exe`. Nếu không thấy, có thể bạn đã giải nén lồng thêm một thư mục con. Mở thư mục con đó ra cho tới khi thấy `jx3client.exe`.
 
-## Bước 2: Đặt launcher
+## Bước 2: Mở launcher
 
-Tải launcher hợp với máy bạn và chép nó vào **cùng thư mục với `jx3client.exe`**:
+Gói cài đã kèm sẵn launcher, không cần tải riêng. Trong thư mục game, mở file hợp với máy bạn:
 
-- Windows 10, 11: [gamelauncher.exe (64-bit)](http://172.105.112.239:8080/vl3/gamelauncher.exe)
-- Windows 7: [gamelauncher32.exe (32-bit)](http://172.105.112.239:8080/vl3/gamelauncher32.exe), cần cài thêm WebView2 Runtime 109
+- Windows 10, 11: `gamelauncher.exe`
+- Windows 7: `gamelauncher32.exe`, cần cài thêm WebView2 Runtime 109
 
-Chưa biết chọn bản nào thì xem bài [Launcher 64-bit hay 32-bit](./launcher-64-32-bit.md).
+Chưa biết chọn file nào thì xem bài [Launcher 64-bit hay 32-bit](./launcher-64-32-bit.md).
 
 Launcher tự cập nhật game về bản mới nhất mỗi lần mở. Từ giờ, hãy luôn mở game bằng launcher thay vì bấm thẳng `jx3client.exe`, nếu không bạn sẽ chơi trên bản cũ và gặp lỗi đã được sửa.
 

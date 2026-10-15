@@ -19,7 +19,7 @@ const SKIP_DIRS = new Set(['.git', '.github', 'scripts', 'node_modules']);
 const FM_KEYS = new Set(['title', 'order', 'updated', 'authors', 'tags', 'draft']);
 // Chuyên mục tin tức: không có _index.md, frontmatter riêng (xem CONTRIBUTING.md).
 const NEWS_DIR = 'tin-tuc';
-const NEWS_KEYS = new Set(['title', 'date', 'kind', 'version']);
+const NEWS_KEYS = new Set(['title', 'date', 'kind', 'version', 'cover']);
 const NEWS_KINDS = new Set(['up', 'ev', 'mt']);
 const VERSION_RE = /^\d+\.\d+\.\d+$/;
 const newsVersions = new Map();
@@ -119,7 +119,7 @@ function checkNewsFrontmatter(file, fm) {
     }
   }
   for (const k of Object.keys(data)) {
-    if (!NEWS_KEYS.has(k)) warn(file, at[k], `Trường "${k}" không dùng cho tin tức (chỉ có title, date, kind, version). Gõ nhầm?`);
+    if (!NEWS_KEYS.has(k)) warn(file, at[k], `Trường "${k}" không dùng cho tin tức (chỉ có title, date, kind, version, cover). Gõ nhầm?`);
   }
 }
 

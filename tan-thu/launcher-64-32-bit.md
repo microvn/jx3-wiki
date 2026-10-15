@@ -11,7 +11,7 @@ Launcher có hai bản, cùng chức năng, chỉ khác loại Windows chạy đ
 - **`gamelauncher.exe`** (64-bit): cho Windows 10 và Windows 11. [Tải bản 64-bit](http://172.105.112.239:8080/vl3/gamelauncher.exe)
 - **`gamelauncher32.exe`** (32-bit): cho Windows 7. [Tải bản 32-bit](http://172.105.112.239:8080/vl3/gamelauncher32.exe)
 
-Dùng bản nào thì cũng chép vào cạnh `jx3client.exe` trong thư mục game. Đặt ở chỗ khác thì launcher không tìm thấy game.
+Gói cài đã có sẵn cả hai file, nằm cạnh `jx3client.exe` trong thư mục game. Hai link trên chỉ cần khi bạn lỡ xoá launcher hoặc đang dùng gói cài cũ; tải về thì chép vào cạnh `jx3client.exe`, đặt ở chỗ khác launcher không tìm thấy game.
 
 ## Chọn bản nào
 

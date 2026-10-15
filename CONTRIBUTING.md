@@ -63,6 +63,7 @@ version: 0.1.22
 - `date`: ngày đăng, dạng ngày/tháng/năm. **Bắt buộc.**
 - `kind`: `up` (cập nhật), `ev` (sự kiện) hoặc `mt` (bảo trì). **Bắt buộc.**
 - `version`: số bản client, ví dụ `0.1.22`. Tin trên launcher có tiêu đề bắt đầu bằng "Bản 0.1.22" sẽ trỏ tới tin có `version: 0.1.22`. Mỗi bản chỉ một tin.
+- `cover` (không bắt buộc): tên ảnh bìa trên website, ví dụ `cover-cuu-phai`. Bỏ trống thì website tự chọn: tin nhắc tên một môn phái dùng ảnh phái đó, còn lại lấy một cảnh cố định theo tên file.
 
 Tên file theo số bản, ví dụ `ban-0-1-22.md`. Đoạn văn đầu tiên là đoạn dẫn, hiện ngay dưới tiêu đề.
 
@@ -81,6 +82,16 @@ Tên file theo số bản, ví dụ `ban-0-1-22.md`. Đoạn văn đầu tiên l
 - Tên file ảnh cũng chỉ dùng chữ thường không dấu, số và dấu gạch ngang, ví dụ `ban-do-truong-an.webp`.
 - Chèn ảnh bằng đường dẫn tương đối: `![Bản đồ Trường An](./assets/ban-do-truong-an.webp)`.
 - Chỉ dùng ảnh bạn tự chụp hoặc tự vẽ. Không lấy ảnh quảng bá, hình vẽ của VNG hay Kingsoft.
+
+## Video
+
+Video đưa lên YouTube trước, rồi dán link vào bài trên **một dòng riêng**, không có chữ nào khác cùng dòng:
+
+```
+[Video: Gia nhập Thiên Sách](https://www.youtube.com/watch?v=1Xj4PkikhuY)
+```
+
+Trang web tự đổi dòng đó thành khung xem video, còn trên GitHub nó vẫn là một link bấm được. Muốn video chạy từ giây thứ mấy thì thêm `&t=1m5s` vào cuối link. Link YouTube nằm giữa câu thì vẫn chỉ là link thường.
 
 ## Liên kết
 
