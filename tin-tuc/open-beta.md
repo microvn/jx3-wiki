@@ -1,11 +1,11 @@
 ---
-title: Open Beta "Cố nhân trùng phùng" mở thứ Bảy 17/10
+title: Open Beta "Cố nhân trùng phùng" mở 7:00 thứ Bảy 17/10
 date: 15/10/2026
 kind: ev
 cover: cover-cuu-phai
 ---
 
-Máy chủ V80 mở Open Beta vào **thứ Bảy, ngày 17/10/2026**. Giờ mở cửa sẽ thông báo trên Discord.
+Máy chủ V80 mở Open Beta lúc **7:00 sáng thứ Bảy, ngày 17/10/2026**.
 
 ## Nhân vật thử nghiệm sẽ được xoá
 
@@ -35,4 +35,4 @@ Làm nhiệm vụ và đánh quái trong khung giờ này đều được nhân 
 
 1. Đăng ký tài khoản trên trang web.
 2. Tải gói cài và launcher theo bài [Cài game và vào Máy chủ V80](../tan-thu/cai-game-va-vao-v80.md).
-3. Theo dõi Discord để biết giờ mở cửa.
+3. Vào game lúc 7:00 sáng thứ Bảy 17/10.

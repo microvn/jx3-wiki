@@ -4,7 +4,7 @@ date: 15/10/2026
 kind: mt
 ---
 
-Trước khi mở Open Beta vào thứ Bảy 17/10/2026, máy chủ V80 sẽ bảo trì để xoá dữ liệu của đợt thử nghiệm. Giờ bảo trì: [cần bổ sung].
+Trước khi mở Open Beta lúc 7:00 sáng thứ Bảy 17/10/2026, máy chủ V80 sẽ bảo trì để xoá dữ liệu của đợt thử nghiệm.
 
 ## Những gì bị xoá
 
