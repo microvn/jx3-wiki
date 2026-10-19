@@ -111,4 +111,4 @@ pho-ban/quang-minh-dinh.md:12: Ảnh không tồn tại: ./assets/boss-1.webp
 
 Sửa lại file đó (bấm cây bút như lúc đầu, chọn đúng nhánh của bạn), commit, và kiểm tra sẽ chạy lại.
 
-Bí quá thì hỏi trên Discord: [https://discord.gg/tCp2c8gQX](https://discord.gg/tCp2c8gQX).
+Bí quá thì hỏi trên Discord của Võ Lâm 3 (link ở mục Cộng đồng cuối trang web).

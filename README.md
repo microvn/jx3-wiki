@@ -51,4 +51,4 @@ Ai quen dòng lệnh có thể kiểm tra trước khi gửi, cần Node.js 18 t
 node scripts/check-wiki.mjs
 ```
 
-Báo lỗi game hoặc hỏi đáp: Discord [https://discord.gg/tCp2c8gQX](https://discord.gg/tCp2c8gQX).
+Báo lỗi game hoặc hỏi đáp: kênh Discord của Võ Lâm 3, link ở mục Cộng đồng cuối trang web.

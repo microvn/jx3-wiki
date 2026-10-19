@@ -6,9 +6,7 @@ authors: [Microvn]
 tags: [hỏi đáp, báo lỗi, discord]
 ---
 
-Lỗi trong game, lỗi launcher hay lỗi tài khoản đều báo trên Discord của Võ Lâm 3: [https://discord.gg/tCp2c8gQX](https://discord.gg/tCp2c8gQX)
-
-Kênh báo lỗi và cách gọi người xử lý: [cần bổ sung]
+Lỗi trong game, lỗi launcher hay lỗi tài khoản đều báo trên Discord của Võ Lâm 3. Link vào Discord nằm ở mục Cộng đồng cuối trang web.
 
 ## Một tin báo lỗi tốt cần có gì
 
