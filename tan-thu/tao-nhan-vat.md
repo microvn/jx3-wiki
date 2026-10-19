@@ -19,7 +19,7 @@ Màn hình đầu tiên có ô tài khoản, mật khẩu và danh sách máy ch
 - **Phiên bản**: số bản client hiện ở góc màn hình. Launcher tự cập nhật nên bạn không cần tải bản vá bằng tay.
 - **Thông báo máy chủ**: tin mới của Máy chủ V80 hiện ngay tại đây.
 
-Đăng nhập lần đầu bị từ chối thì thử lại một hai lần, xem [Hỏi đáp Open Beta](../hoi-dap/open-beta.md).
+Đăng nhập lần đầu bị từ chối thì thử lại một hai lần, xem [Hỏi đáp ngày mở cửa](../hoi-dap/ngay-mo-cua.md).
 
 ## Màn hình chọn nhân vật
 
