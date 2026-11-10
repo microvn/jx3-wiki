@@ -13,7 +13,7 @@ Mỗi nhân vật nhận một thư "Quà Thất Tịch" khi đăng nhập trong
 
 - 2 Nguyện Tiện Hạp.
 - 15 Khăn Uyên Ương, tặng bạn bè để tăng hảo cảm.
-- 25 Ngũ Hành Thạch cấp 6, khoá theo nhân vật, mỗi hệ Kim, Mộc, Thủy, Hỏa, Thổ năm viên.
+- 10 Ngũ Hành Thạch cấp 6, khoá theo nhân vật, mỗi hệ Kim, Mộc, Thủy, Hỏa, Thổ hai viên.
 - 18 lượt đổi kiểu tóc miễn phí, cộng thẳng vào nhân vật, dùng ở tiệm Dịch Dung.
 
 ## Làm gì trong sự kiện
